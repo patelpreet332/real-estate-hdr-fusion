@@ -4,7 +4,7 @@ Real Estate HDR Fusion Studio is an enterprise-grade, state-of-the-art web appli
 
 ---
 
-## 📖 Project Overview
+## Project Overview
 
 ### What the System Does
 In architectural and real-estate photography, capturing a single shot with balanced lighting is notoriously difficult due to extreme dynamic ranges—such as bright, sunny windows contrasted against dark interior corners. 
@@ -13,7 +13,7 @@ This system automates professional exposure blending by taking a set of brackete
 
 ---
 
-## 🚀 Key Features
+## Key Features
 
 * **Multi-Exposure Bracketed Fusion:** Supports blending 2 to 10 exposure variations of the exact same camera framing.
 * **Multi-Agent Architectural Workflow:**
@@ -23,7 +23,7 @@ This system automates professional exposure blending by taking a set of brackete
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 * **Frontend Framework:** Next.js 16.2 (App Router)
 * **Runtime & UI Logic:** React 19.2
@@ -36,7 +36,7 @@ This system automates professional exposure blending by taking a set of brackete
 
 ---
 
-## 🏗️ System Architecture & Data Flow
+## System Architecture & Data Flow
 
 ```mermaid
 graph TD
@@ -48,7 +48,7 @@ graph TD
 
 ---
 
-## 🗺️ Project Workflow (User Journey)
+## Project Workflow (User Journey)
 
 ```
 ┌──────────────────────────────┐         ┌──────────────────────────────┐
@@ -71,7 +71,7 @@ graph TD
 
 ---
 
-## ⚙️ Installation Guide
+## Installation Guide
 
 ### Prerequisites
 Make sure you have Node.js (version 20+ recommended) and npm installed.
@@ -106,7 +106,7 @@ Open [http://localhost:3000](http://localhost:3000) to view the application.
 
 ---
 
-## 🖼️ Screenshots Section
+## Screenshots Section
 
 Below are the studio interface and exposure brackets showcasing the application workflow and synthesized outputs:
 
