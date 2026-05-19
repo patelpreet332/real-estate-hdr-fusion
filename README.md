@@ -40,17 +40,10 @@ This system automates professional exposure blending by taking a set of brackete
 
 ```mermaid
 graph TD
-    A[Client UI: Canva Layout] -->|1. Uploads Brackets| B(Zustand State Store)
-    B -->|2. Triggers Generate| C{Selected AI Agent?}
-    
-    C -->|gpt image-5| D[OpenAI API Client]
-    C -->|gemini-flash-2.0| E[Gemini 2.0 Vision Client]
-    
-    D -->|3a. Direct Edit Request| F[OpenAI Edit Endpoints]
-    F -->|4a. Base64 URL / Image| A
-    
-    E -->|3b. Analyze Exposures| G[Google Gemini API]
-    G -->|4b. Generate Synthesis Instructions| A
+    A["🖥️ Client UI: Canva Layout"] -->|"1. Uploads Exposure Brackets"| B(["🗄️ Zustand State Store"])
+    B -->|"2. Triggers Generate"| C["🤖 OpenAI API Client"]
+    C -->|"3. Direct Edit Request"| D["⚙️ OpenAI Edit Endpoints"]
+    D -->|"4. Return Processed Image"| A
 ```
 
 ---
@@ -58,9 +51,22 @@ graph TD
 ## 🗺️ Project Workflow (User Journey)
 
 ```
-[ Step 1: Upload ] ──► [ Step 2: Configure ] ──► [ Step 3: Synthesis ] ──► [ Step 4: Export ]
-  Drop exposure         Select Agent              Trigger "Generate".       Preview full HD
-  brackets (-EV/+EV).   (gpt/gemini).             Watch real-time fusion.   render & download.
+┌──────────────────────────────┐         ┌──────────────────────────────┐
+│     Step 1 · Upload          │──────►  │     Step 2 · Configure       │
+│                              │         │                              │
+│  Drop bracketed exposure     │         │  Select AI Agent             │
+│  files (-EV / +EV) into      │         │  (gpt image-5 or             │
+│  the upload queue.           │         │   gemini-flash-2.0).         │
+└──────────────────────────────┘         └──────────────┬───────────────┘
+                                                        │
+                                                        ▼
+┌──────────────────────────────┐         ┌──────────────────────────────┐
+│   Step 4 · Review & Export   │◄──────  │     Step 3 · Generate        │
+│                              │         │                              │
+│  Preview the full HD render, │         │  Click "Generate Image" and  │
+│  copy shareable link, or     │         │  watch real-time AI fusion   │
+│  download image to disk.     │         │  process run to completion.  │
+└──────────────────────────────┘         └──────────────────────────────┘
 ```
 
 ---
