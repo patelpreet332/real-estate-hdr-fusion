@@ -39,3 +39,10 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# lockfiles (Phase 3 Audit Requirement)
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+
