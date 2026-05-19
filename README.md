@@ -1,6 +1,6 @@
-# Real Estate HDR Fusion Studio
+# Real Estate HDR Fusion
 
-Real Estate HDR Fusion Studio is an enterprise-grade, state-of-the-art web application designed to merge multiple bracketed exposure images of a single camera position into a single, high-fidelity, ultra-realistic professional real-estate photograph.
+Real Estate HDR Fusion is an enterprise-grade, state-of-the-art web application designed to merge multiple bracketed exposure images of a single camera position into a single, high-fidelity, ultra-realistic professional real-estate photograph.
 
 ---
 
